@@ -1,0 +1,28 @@
+{
+  "name": "js-helper",
+  "version": "1.0.0",
+  "description": "> 🚀js 助手，各种数据处理方法集合",
+  "main": "babel.config.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZXinL-CN/js-helper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZXinL-CN/js-helper/issues"
+  },
+  "homepage": "https://github.com/ZXinL-CN/js-helper#readme",
+  "devDependencies": {
+    "jest": "^25.5.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "babel-jest": "^29.2.2"
+  }
+}
