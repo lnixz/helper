@@ -3,30 +3,17 @@ export default [
         input: './src/main.js',
         output: [
             {
-                file: './dist/bundle.es.mjs',
-                format: 'es',
+                file: './dist/esm/index.esm.mjs',
+                format: 'esm',
             },
             {
-                file: './dist/bundle.cjs.js',
+                file: './dist/cjs/index.cjs.js',
                 format: 'cjs',
             },
             {
-                file: './dist/bundle.amd.js',
-                format: 'amd',
-            },
-            {
-                file: './dist/bundle.iife.js',
-                format: 'iife',
-                name: 'helper',
-            },
-            {
-                file: './dist/bundle.umd.js',
+                file: './dist/umd/index.umd.js',
                 format: 'umd',
                 name: 'helper',
-            },
-            {
-                file: './dist/bundle.system.js',
-                format: 'system',
             },
         ]
     },

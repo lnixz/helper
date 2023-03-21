@@ -1,4 +1,4 @@
-import { helper } from '../dist/bundle.es.mjs';
+import { helper } from '../dist/esm/index.esm.mjs';
 
 const obj = {
     a: 'a',

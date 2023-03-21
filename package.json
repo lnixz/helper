@@ -2,7 +2,7 @@
   "name": "helper",
   "version": "1.0.0",
   "description": "> 🚀js 助手，各种数据处理方法集合",
-  "main": "./src/main.js",
+  "main": "./dist/cjs/index.cjs.js",
   "scripts": {
     "build": "rimraf ./dist/ && rollup --config",
     "copy": "copy README.md dist && copy package.json dist",
