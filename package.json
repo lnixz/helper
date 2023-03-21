@@ -31,7 +31,7 @@
     "babel-jest": "^29.5.0"
   },
   "files": [
-    "./dist"
+    "dist/"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
