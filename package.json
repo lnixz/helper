@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/ZXinL-CN/helper.git"
   },
-  "keywords": [],
+  "keywords": [
+    "JavaScript",
+    "tools"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
