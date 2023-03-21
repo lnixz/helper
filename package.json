@@ -1,6 +1,6 @@
 {
   "name": "@xinliang/helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> 🚀js 助手，各种数据处理方法集合",
   "main": "./dist/cjs/index.cjs.js",
   "scripts": {
