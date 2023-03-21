@@ -4,8 +4,9 @@
   "description": "> 🚀js 助手，各种数据处理方法集合",
   "main": "./src/main.js",
   "scripts": {
-    "build": "rimraf ./dist/ && rollup --config && npm run copy",
+    "build": "rimraf ./dist/ && rollup --config",
     "copy": "copy README.md dist && copy package.json dist",
+    "prepublish": "npm run build",
     "test": "jest"
   },
   "repository": {
@@ -29,6 +30,9 @@
     "@babel/preset-env": "^7.20.2",
     "babel-jest": "^29.5.0"
   },
+  "files": [
+    "./dist"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }
