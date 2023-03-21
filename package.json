@@ -1,28 +1,35 @@
 {
-  "name": "js-helper",
+  "name": "helper",
   "version": "1.0.0",
   "description": "> 🚀js 助手，各种数据处理方法集合",
-  "main": "babel.config.js",
+  "main": "./src/main.js",
   "scripts": {
+    "build": "rimraf ./dist/ && rollup --config && npm run copy",
+    "copy": "copy README.md dist && copy package.json dist",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZXinL-CN/js-helper.git"
+    "url": "git+https://github.com/ZXinL-CN/helper.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ZXinL-CN/js-helper/issues"
+    "url": "https://github.com/ZXinL-CN/helper/issues"
   },
-  "homepage": "https://github.com/ZXinL-CN/js-helper#readme",
+  "homepage": "https://github.com/ZXinL-CN/helper#readme",
   "devDependencies": {
-    "jest": "^25.5.4"
+    "jest": "^25.5.4",
+    "rimraf": "^4.4.0",
+    "rollup": "^3.20.0"
   },
   "dependencies": {
-    "@babel/core": "^7.19.6",
-    "@babel/preset-env": "^7.19.4",
-    "babel-jest": "^29.2.2"
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.5.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
