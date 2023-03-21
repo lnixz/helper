@@ -1,5 +1,5 @@
 {
-  "name": "helper",
+  "name": "@xinliang/helper",
   "version": "1.0.0",
   "description": "> 🚀js 助手，各种数据处理方法集合",
   "main": "./dist/cjs/index.cjs.js",
@@ -33,6 +33,7 @@
     "dist/"
   ],
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   }
 }
