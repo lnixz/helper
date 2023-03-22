@@ -1,8 +1,10 @@
-import { deleteAttributeInObject } from './删除对象中的属性/index';
-import { extractType } from './提取对象的类型/index';
-import { getSearchPathOfTargetObject } from './获取目标对象的搜索路径/index';
+import deleteAttributeInObject from './deleteAttributeInObject/index';
+import extractType from './extractType/index';
+import getSearchPathOfTargetObject from './getSearchPathOfTargetObject/index';
+import omit from './omit';
 
 export const helper = {
+    omit,
     deleteAttributeInObject,
     extractType,
     getSearchPathOfTargetObject,

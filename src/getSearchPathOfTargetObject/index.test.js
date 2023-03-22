@@ -1,5 +1,5 @@
 import { source } from './source';
-import { getSearchPathOfTargetObject } from './index';
+import getSearchPathOfTargetObject from './index';
 
 test('getSearchPathOfTargetObject returns array', () => {
     const config = {

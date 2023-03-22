@@ -1,5 +1,5 @@
 
-import { deleteAttributeInObject } from './index';
+import deleteAttributeInObject from './index';
 
 test('delete attribute in object', () => {
     const obj = {
@@ -19,4 +19,14 @@ test('delete attribute in object', () => {
     }
     const attribute = 'title'
     expect(deleteAttributeInObject(obj, attribute)).toHaveProperty('content', null);
+})
+
+test('delete attribute in object', () => {
+    const obj = {
+        name: 'foo',
+        title: 'bar',
+        content: null,
+    }
+    const attribute = 'age'
+    expect(deleteAttributeInObject(obj, attribute)).toEqual(obj);
 })

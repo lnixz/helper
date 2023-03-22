@@ -1,6 +1,11 @@
-export function extractType(object) {
+/**
+ * @description 提取对象的类型
+ * @param {*} object 
+ * @returns 
+ */
+export default function extractType(object) {
     if (typeof object !== 'object' && typeof object !== 'function' || object === null) {
-        throw new TypeError('object must be a function or an instance of typeof object');
+        throw 'object must be a function or an instance of typeof object';
     }
     const typeObject = {};
     Object.keys(object).forEach((key) => {

@@ -1,4 +1,4 @@
-import { extractType } from './index'
+import extractType from './index'
 
 test('extractType returns is Object', () => {
     const obj = {
@@ -17,4 +17,9 @@ test('extractType returns is Object', () => {
         d: (_) => (_),
     }
     expect(extractType(obj)).toEqual({ a: 'number', b: 'string', c: 'boolean', d: 'function' })
+})
+
+test('extractType returns is Object', () => {
+    const obj = null;
+    expect(() => extractType(obj)).toThrow()
 })
