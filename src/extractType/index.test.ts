@@ -14,7 +14,7 @@ test('extractType returns is Object', () => {
         a: 123,
         b: 'zs',
         c: true,
-        d: (_) => (_),
+        d: (_: any) => (_),
     }
     expect(extractType(obj)).toEqual({ a: 'number', b: 'string', c: 'boolean', d: 'function' })
 })
