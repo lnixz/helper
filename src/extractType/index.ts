@@ -13,3 +13,4 @@ export default function extractType(object: any): any {
     })
     return typeObject;
 }
+

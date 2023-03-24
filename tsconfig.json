@@ -1,10 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                  
-    "module": "commonjs",                            
-    "esModuleInterop": true,                           
-    "forceConsistentCasingInFileNames": true,        
+    /* Language and Environment */
+    "target": "ESNext",
+
+    /* Modules */
+    "module": "esnext",
+
+    /* Emit */
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./dist/types",
+    "emitDeclarationOnly": true,
+    "importHelpers": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
     "strict": true,
+
+    /* Completeness */
     "skipLibCheck": true
-  }
+  },
+  "include": ["src"]
 }

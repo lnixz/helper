@@ -1,7 +1,7 @@
-import deleteAttributeInObject from './deleteAttributeInObject/index';
-import extractType from './extractType/index';
-import getSearchPathOfTargetObject from './getSearchPathOfTargetObject/index';
-import omit from './omit';
+import deleteAttributeInObject from './deleteAttributeInObject/index.js';
+import extractType from './extractType/index.ts';
+import getSearchPathOfTargetObject from './getSearchPathOfTargetObject/index.js';
+import omit from './omit/index.js';
 
 export const helper = {
     omit,
