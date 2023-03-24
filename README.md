@@ -2,7 +2,13 @@
 
 > 🚀js 助手，各种数据处理方法集合
 
-> 使用实例：
+**安装：**
+
+```shell
+npm i @xinliang/helper
+```
+
+**使用示例：**
 
 ```javascript
 import { helper } from '@xinliang/helper';
