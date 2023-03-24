@@ -2,6 +2,7 @@
 
 > 🚀js 助手，各种数据处理方法集合
 
+
 **安装：**
 
 ```shell
@@ -21,4 +22,14 @@ const obj = {
 
 console.log(helper.deleteAttributeInObject(obj, 'a'));
 // => { b: 'b', c: 'c' }
+```
+
+**构建产物：**
+```shell
+npm run build
+```
+
+**运行测试用例：**
+```shell
+npm test
 ```
