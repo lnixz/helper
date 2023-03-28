@@ -1,4 +1,8 @@
-// 深拷贝
+/**
+ * @description 对象拷贝
+ * @param {*} obj  
+ * @returns 
+ */
 export default function copyObj(obj = {}){
     let newobj = null;
     if(typeof (obj) == 'object' && obj !== null){
