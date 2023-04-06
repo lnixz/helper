@@ -6,7 +6,7 @@
  * @param {string} childrenNodeAttribute tree子节点属性名
  * @returns 
  */
-export default function getSearchPathOfTargetObject(array, targetValue, targetKey, childrenNodeAttribute = 'children') {
+export default function getSearchPathOfTargetObject(array: any[], targetValue: any, targetKey: string, childrenNodeAttribute: string = 'children'): any[] {
     for (let i = 0; i < array.length; i++) {
         if (array[i][targetKey] === targetValue) {
             return [array[i]];

@@ -3,17 +3,17 @@
  * @param {*} obj  
  * @returns 
  */
-export default function clone(obj = {}){
-    let newobj = null;
-    if(typeof (obj) == 'object' && obj !== null){
-        newobj = obj instanceof Array?[]:{}
+export default function clone(obj: any = {}) {
+    let newobj: any = null;
+    if (typeof (obj) == 'object' && obj !== null) {
+        newobj = obj instanceof Array ? [] : {}
         for (var i in obj) {
             newobj[i] = clone(obj[i])
         }
-    }else{
+    } else {
         newobj = obj
     }
     return newobj;
 }
-     
+
 
