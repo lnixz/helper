@@ -4,7 +4,7 @@
  * @param  {...any} keys 
  * @returns 
  */
-export default function omit(obj, ...keys) {
+export default function omit(obj: Record<string, any>, ...keys: string[]): Record<string, any> {
     const clone = { ...obj };
     keys.forEach(key => {
         if (key in clone) {
